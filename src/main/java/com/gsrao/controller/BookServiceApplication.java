@@ -20,7 +20,8 @@ public class BookServiceApplication {
     public List<Book> getBooks(){
 
         return Stream.of(new Book(1, "Java", 1000),
-                new Book(2, "Oracle", 500) ).collect(Collectors.toList());
+                new Book(2, "Oracle", 500),
+                new Book(3, "Cassandra", 459)).collect(Collectors.toList());
     }
 
     public static void  main(String[] args){
